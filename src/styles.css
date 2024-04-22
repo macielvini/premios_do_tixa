@@ -1,0 +1,153 @@
+body {
+  background-color: #111114;
+  color: white;
+}
+
+.App {
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.App img {
+  width: 100%;
+  max-width: min-content;
+  margin-block: 1rem;
+}
+
+.App div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1rem;
+}
+
+.App div textarea {
+  margin: 1rem;
+  padding: 8px 12px;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-width: 10rem;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.prize {
+  margin-top: 2rem;
+}
+
+.rainbow-bg {
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.rainbow {
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg {
+  100%,
+  0% {
+    background-color: rgb(255, 0, 0);
+  }
+  8% {
+    background-color: rgb(255, 127, 0);
+  }
+  16% {
+    background-color: rgb(255, 255, 0);
+  }
+  25% {
+    background-color: rgb(127, 255, 0);
+  }
+  33% {
+    background-color: rgb(0, 255, 0);
+  }
+  41% {
+    background-color: rgb(0, 255, 127);
+  }
+  50% {
+    background-color: rgb(0, 255, 255);
+  }
+  58% {
+    background-color: rgb(0, 127, 255);
+  }
+  66% {
+    background-color: rgb(0, 0, 255);
+  }
+  75% {
+    background-color: rgb(127, 0, 255);
+  }
+  83% {
+    background-color: rgb(255, 0, 255);
+  }
+  91% {
+    background-color: rgb(255, 0, 127);
+  }
+}
+
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
